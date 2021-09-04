@@ -1,0 +1,6 @@
+# Julia: Manifest files
+Manifest.toml
+
+# LA2:
+LA2/scripts/*.pdf
+LA2/scripts/*.dat
