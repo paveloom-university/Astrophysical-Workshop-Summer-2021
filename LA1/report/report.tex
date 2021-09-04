@@ -1,25 +1,41 @@
-\documentclass[a4paper, oneside]{article}
-\usepackage[english, russian]{babel}
-\babelfont{rm}{cmunrm.otf}
+\input{../../shared/preamble.tex}
 
+\hypersetup{pdftitle={Астрофизическая практика: отчет по первой работе}}
 \usepackage[lmargin=28mm]{geometry}
-
-\usepackage[table]{xcolor}
-\usepackage{booktabs}
 \usepackage{makecell}
-
-\setlength{\parindent}{0pt}
 
 \begin{document}
 
 \section*{Работа №1: Классификация звёздных спектров}
+\subsubsection*{Выполнил: Павел Соболев}
 
-\begin{tabular}{ccccc}
-  \toprule
-  № & Зв. величина & Класс & Линии ($\lambda$ в \AA, интенсивность) & Примечания \\
-  \midrule
+\vspace{3em}
 
-  78 & 11.146 & G2 IV &
+\subsection*{Задачи}
+
+\begin{itemize}
+  \setlength\itemsep{-0.1em}
+  \item Получить спектр звезды, используя моделируемые с помощью компьютера телескоп и спектрограф;
+  \item Сравнить этот спектр со спектром звезды известного спектрального класса;
+  \item Отождествить абсорбционные линии на графическом и фотографическом изображениях спектра;
+  \item Обсудить относительную глубину абсорбционных линий, измерив их, и сравнить со стандартным спектром;
+\end{itemize}
+
+\subsection*{Ход выполнения и результаты}
+
+В ходе работы с виртуальным телескопом и спектрографом были получены следующие данные.
+Отождествления проведены по наличию линий, их интенсивности, а также по общим характеристикам спектра.
+Пояснения приведены в примечаниях.
+
+\begin{table}[h]
+  \centering
+  \caption{Данные и результаты отождествлений (часть 1)}
+  \begin{tabular}{ccccc}
+    \toprule
+    № & Зв. величина & Класс & Линии ($\lambda$ в \AA, интенсивность) & Примечания \\
+    \midrule
+
+    78 & 11.146 & G2 IV &
     \begin{tabular}{@{}c@{}}
       K Ca II (3933.68, 0.150) \\
       H Ca II (3968.49, 0.160) \\
@@ -29,19 +45,19 @@
       Ca I (4226.74, 0.700) \\
       G Band (4300.00, 0.480)
     \end{tabular} &
-  \makecell{
-    Интенсивные \\
-    линии H и K Ca II, \\
-    ослабленная линия H I, \\
-    есть линия Ca I и \\
-    многочисленные \\
-    линии металлов
-  } \\
+    \makecell{
+      Интенсивные \\
+      линии H и K Ca II, \\
+      ослабленная линия H I, \\
+      есть линия Ca I и \\
+      многочисленные \\
+      линии металлов
+    } \\
 
-  \arrayrulecolor{black!40}
-  \midrule
+    \arrayrulecolor{black!40}
+    \midrule
 
-  140 & 10.086 & B6 V &
+    140 & 10.086 & B6 V &
     \begin{tabular}{@{}c@{}}
       H Ca II (3968.49, 0.410) \\
       H$_\varepsilon$ (3970.07, 0.400) \\
@@ -50,15 +66,15 @@
       H$_\gamma$ (4340.48, 0.330) \\
       Fe I (4143.88, 0.770)
     \end{tabular} &
-  \makecell{
-    Линии поглощения \\
-    водорода и гелия, \\
-    сильная линия H Ca II
-  } \\
+    \makecell{
+      Линии поглощения \\
+      водорода и гелия, \\
+      сильная линия H Ca II
+    } \\
 
-  \midrule
+    \midrule
 
-  142 & 7.572 & M2 I &
+    142 & 7.572 & M2 I &
     \begin{tabular}{@{}c@{}}
       Ca I (4226.74, 0.130) \\
       H Ca II (3968.49, 0.070) \\
@@ -66,30 +82,44 @@
       Fe I (4383.56, 0.430) \\
       G Band (4300.00, 0.360)
     \end{tabular} &
-  \makecell{
-    Изреженный спектр, \\
-    линии молекул, \\
-    слабая полоса G
-  } \\
+    \makecell{
+      Изреженный спектр, \\
+      линии молекул, \\
+      слабая полоса G
+    } \\
 
-  \midrule
+    \arrayrulecolor{black}
+    \bottomrule
+  \end{tabular}
+\end{table}
 
-  433 & 5.658 & O8 V &
+\newpage
+
+\begin{table}[h]
+  \centering
+  \caption{Данные и результаты отождествлений (часть 2)}
+  \begin{tabular}{ccccc}
+    \toprule
+    № & Зв. величина & Класс & Линии ($\lambda$ в \AA, интенсивность) & Примечания \\
+    \midrule
+
+    433 & 5.658 & O8 V &
     \begin{tabular}{@{}c@{}}
       H Ca II (3968.49, 0.670) \\
       He I (4024.80, 0.820) \\
       He II (4100.04, 0.700) \\
       H$_\gamma$ (4340.48, 0.530)
     \end{tabular} &
-  \makecell{
-    Слабые линии \\
-    нейтрального водорода, \\
-    гелия, ионизованного гелия
-  } \\
+    \makecell{
+      Слабые линии \\
+      нейтрального водорода, \\
+      гелия, ионизованного гелия
+    } \\
 
-  \midrule
+    \arrayrulecolor{black!40}
+    \midrule
 
-  146 & 10.596 & F0 V &
+    146 & 10.596 & F0 V &
     \begin{tabular}{@{}c@{}}
       K Ca II (3933.68, 0.420) \\
       H Ca II (3968.49, 0.320) \\
@@ -98,17 +128,17 @@
       Ca I (4226.74, 0.820) \\
       G Band (4300.00, 0.770)
     \end{tabular} &
-  \makecell{
-    Усиленные линии \\
-    H и K Ca II, слабые \\
-    линии металлов, \\
-    появляется линия Ca I, \\
-    появляется полоса G
-  } \\
+    \makecell{
+      Усиленные линии \\
+      H и K Ca II, слабые \\
+      линии металлов, \\
+      появляется линия Ca I, \\
+      появляется полоса G
+    } \\
 
-  \midrule
+    \midrule
 
-  152 & 11.282 & B6 V &
+    152 & 11.282 & B6 V &
     \begin{tabular}{@{}c@{}}
       H Ca II (3968.49, 0.390) \\
       He I (4120.82, 0.740) \\
@@ -116,15 +146,15 @@
       H$_\delta$ (4101.75, 0.390) \\
       H$_\gamma$ (4340.48, 0.330)
     \end{tabular} &
-  \makecell{
-    Линии поглощения \\
-    водорода и гелия, \\
-    сильная линия H Ca II
-  } \\
+    \makecell{
+      Линии поглощения \\
+      водорода и гелия, \\
+      сильная линия H Ca II
+    } \\
 
-  \midrule
+    \midrule
 
-  155 & 8.330 & K0 V &
+    155 & 8.330 & K0 V &
     \begin{tabular}{@{}c@{}}
       K Ca II (3933.68, 0.260) \\
       G Band (4300.00, 0.500) \\
@@ -132,24 +162,15 @@
       Ca I (4226.74, 0.550) \\
       H$_\delta$ (4101.75, 0.650)
     \end{tabular} &
-  \makecell{
-    Линии металлов и \\
-    полоса G интенсивны, \\
-    слабые линии водорода
-  } \\
+    \makecell{
+      Линии металлов и \\
+      полоса G интенсивны, \\
+      слабые линии водорода
+    } \\
 
-  \arrayrulecolor{black}
-  \bottomrule
-\end{tabular}
+    \midrule
 
-\newpage
-
-\noindent\begin{tabular}{ccccc}
-  \toprule
-  № & Зв. величина & Класс & Линии ($\lambda$ в \AA, интенсивность) & Примечания \\
-  \midrule
-
-  68 & 7.666 & K0 III &
+    68 & 7.666 & K0 III &
     \begin{tabular}{@{}c@{}}
       K Ca II (3933.68, 0.060) \\
       H Ca II (3968.48, 0.110) \\
@@ -159,31 +180,30 @@
       G Band (4300.00, 0.410) \\
       Fe I (4283.56, 0.530) \\
     \end{tabular} &
-  \makecell{
-    Линии металлов и \\
-    полоса G интенсивны, \\
-    слабые линии водорода
-  } \\
+    \makecell{
+      Линии металлов и \\
+      полоса G интенсивны, \\
+      слабые линии водорода
+    } \\
 
-  \arrayrulecolor{black!40}
-  \midrule
+    \midrule
 
-  272 & 11.031 & F0 II &
+    272 & 11.031 & F0 II &
     \begin{tabular}{@{}c@{}}
       K Ca II (3933.68, 0.310) \\
       H Ca II (3968.49, 0.240) \\
       H$_\gamma$ (4340.48, 0.290) \\
       Ca I (4226.74, 0.690)
     \end{tabular} &
-  \makecell{
-    Усиленные линии \\
-    H и K Ca II, \\
-    появляется линия Ca I
-  } \\
+    \makecell{
+      Усиленные линии \\
+      H и K Ca II, \\
+      появляется линия Ca I
+    } \\
 
-  \midrule
+    \midrule
 
-  147 & 9.351 & M2 I &
+    147 & 9.351 & M2 I &
     \begin{tabular}{@{}c@{}}
       K Ca II (3933.68, 0.030) \\
       H Ca II (3968.49, 0.050) \\
@@ -191,14 +211,15 @@
       Ca I (4226.74, 0.240) \\
       G Band (4300.00, 0.340)
     \end{tabular} &
-  \makecell{
-    Изреженный спектр, \\
-    линии молекул, слабые \\
-    линии полосы G
-  } \\
+    \makecell{
+      Изреженный спектр, \\
+      линии молекул, слабые \\
+      линии полосы G
+    } \\
 
-  \arrayrulecolor{black}
-  \bottomrule
-\end{tabular}
+    \arrayrulecolor{black}
+    \bottomrule
+  \end{tabular}
+\end{table}
 
 \end{document}
