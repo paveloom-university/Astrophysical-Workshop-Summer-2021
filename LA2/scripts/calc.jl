@@ -82,7 +82,20 @@ for obj in wls
 end
 
 # Load the magnitudes
-mags = [16.87, 14.49, 12.30, 16.52, 15.08, 10.98]
+mags = [
+    # Ursa Major II (uma2-1)
+    16.87,
+    # Ursa Major I (uma1-3)
+    14.49,
+    # Coma Berenices (Coma1)
+    12.30,
+    # Bootes (Boot1)
+    16.52,
+    # Corona Borealis (CrBor1)
+    15.08,
+    # Sagittarius (GAS)
+    10.98
+]
 
 # Set the absolute magnitude (with an
 # assumption it's the same for all objects)
