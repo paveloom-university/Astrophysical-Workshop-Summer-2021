@@ -1,6 +1,9 @@
 # Julia: Manifest files
 Manifest.toml
 
+# Temporary files: Documents
+*.doc#
+
 # LA2:
 LA2/*.pdf
 LA2/*.dat
